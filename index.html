@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta charset="utf-8" />
+
+    <!--Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+   
+
+    <!-- Jquery -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- News content -->
+    <scripts type="text/javascript" src="ReadingContent.js"></scripts>
+
+    <title>Genoa Club Hong Kong</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <nav class="bar bar-nav row">
+        <div class="col-md-2">
+          <img
+            class="img-responsive"
+            src="Images/Genoa Club Hong Kong Logo.png"
+            alt="Logo Genoa"
+          />
+        </div>
+
+        <div class="col-md-8 ">
+          <div class="row">
+            <div class="page-header">
+              <h1 class="h1 col-xs-5" style="color:white;">
+                Genoa Club Hong Kong <br /><small>
+                  La Casa Del Grifone Ad Hong Kong</small
+                >
+              </h1>
+            </div>
+            <div class="col-xs-6">
+              <img src="Images/Genoa Club Hong Kong Banner.jpg" alt="Genoa Banner" class="img" />
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <button
+                id="home"
+                class="btn btn-primary col-xs-2"
+                href="#"
+                role="button"
+              >
+                <h3>Home</h3>
+              </button>
+            </div>
+            <div>
+              <button
+                id="news"
+                class="btn btn-primary col-xs-2"
+                href="#"
+                role="button"
+              >
+                <h3>News</h3>
+              </button>
+            </div>
+            <div>
+              <button
+                id="about"
+                class="btn btn-primary col-xs-2"
+                href="#"
+                role="button"
+              >
+                <h3>About</h3>
+              </button>
+            </div>
+            <div>
+              <button
+                id="application"
+                class="btn btn-primary col-xs-2"
+                href="#"
+                role="button"
+              >
+                <h3>Application</h3>
+              </button>
+            </div>
+            <div>
+              <button
+                id="info"
+                class="btn btn-primary col-xs-2"
+                href="#"
+                role="button"
+              >
+                <h3>Info</h3>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <a href="indexITA.html"> ITA </a>
+          <br />
+          <a href="index.html"> ENG </a>
+        </div>
+      </nav>
+
+      <div id="reading" class=" container-fluid">
+        <div class="panel container">
+          <h1 id="reading-title" class="text-center"></h1>
+          <p id="reading-content" class="panel-body text-center h4">
+            Click a tab to start browsing <br />
+            Enjoy
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var News_Content = `<div>
+  <p class="h1 text-center">Sep 2019</p>
+  <a
+    href="News/GENOA CLUB HONG KONG NEWS 14 - SET 2019.pdf"
+    class="btn btn-default btn-block "
+    target="_blank"
+    >Read Now</a
+  >
+</div>
+
+<p class="h1 text-center">
+  Dec 2018
+  <a
+    href="News/GENOA%20CLUB%20HONG%20KONG%20NEWS%2013%20-%20DEC%202018.pdf"
+    class="btn btn-default btn-block "
+    target="_blank"
+    >Read Now</a
+  >
+</p>
+<p class="h1 text-center">
+  Oct 2018
+  <a
+    href="News/GENOA%20CLUB%20HONG%20KONG%20NEWS%2012%20-%20OCT%202018.pdf"
+    class="btn btn-default btn-block "
+    target="_blank"
+    >Read Now</a
+  >
+</p>
+<p class="h1 text-center">
+  Dec 2017<a
+    href="News/GENOA%20CLUB%20HONG%20KONG%20NEWS%2011%20-%20DEC%202017.pdf"
+    class="btn btn-default btn-block "
+    target="_blank"
+    >Read Now</a
+  >
+</p>
+<p class="h1 text-center">
+  Sep 2017<a
+    href="News/GENOA%20CLUB%20HONG%20KONG%20NEWS%2010%20-%20SEP%202017.pdf"
+    class="btn btn-default btn-block "
+    target="_blank"
+    >Read Now</a
+  >
+</p>
+<p class="h1 text-center">
+  Jun 2017<a
+    href="News/GENOA%20CLUB%20HONG%20KONG%20NEWS%2009%20-%20JUN%202017.pdf"
+    class="btn btn-default btn-block "
+    target="_blank"
+    >Read Now</a
+  >
+</p>
+<div>
+  <p class="h1 text-center">Dec 2016</p>
+  <a
+    href="News/GENOA%20CLUB%20HONG%20KONG%20NEWS%2008%20-%20DEC%202016.pdf"
+    class="btn btn-default btn-block "
+    target="_blank"
+    >Read Now</a
+  >
+</div>
+<div>
+  <p class="h1 text-center">Sep 2016</p>
+  <a
+    href="News/GENOA%20CLUB%20HONG%20KONG%20NEWS%2007%20-%20SEP%202016.pdf"
+    class="btn btn-default btn-block"
+    target="_blank"
+    >Read Now</a
+  >
+</div>
+<div style="Width = 20px;">
+  <p class="h1 text-center">Mar 2016</p>
+  <a
+    href="News/GENOA%20CLUB%20HONG%20KONG%20NEWS%2006%20-%20MAR%202016.pdf"
+    class="btn btn-default btn-block "
+    target="_blank"
+    >Read Now</a
+  >
+</div>
+<div>
+  <p class="h1 text-center">Dec 2015</p>
+  <a
+    href="News/GENOA%20CLUB%20HONG%20KONG%20NEWS%2005%20-%20DEC%202015.pdf"
+    class="btn btn-default btn-block "
+    target="_blank"
+    >Read Now</a
+  >
+</div>
+<div>
+  <p class="h1 text-center">Sep 2015</p>
+  <a
+    href="News/GENOA%20CLUB%20HONG%20KONG%20NEWS%2004%20-%20SEP%202015.pdf"
+    class="btn btn-default btn-block "
+    target="_blank"
+    >Read Now</a
+  >
+</div>
+<div>
+  <p class="h1 text-center">Feb 2015</p>
+  <a
+    href="News/GENOA%20CLUB%20HONG%20KONG%20NEWS%2003%20-%20FEB%202015.pdf"
+    class="btn btn-default btn-block "
+    target="_blank"
+    >Read Now</a
+  >
+</div>
+<div>
+  <p class="h1 text-center">Dec 2014</p>
+  <a
+    href="News/GENOA%20CLUB%20HONG%20KONG%20NEWS%2001%20-%20NOV%202014.pdf"
+    class="btn btn-default btn-block "
+    target="_blank"
+    >Read Now</a
+  >
+</div>
+<div>
+  <p class="h1 text-center">Nov 2014</p>
+  <a
+    href="News/GENOA%20CLUB%20HONG%20KONG%20NEWS%2002%20-%20DEC%202014.pdf"
+    class="btn btn-default btn-block "
+    target="_blank"
+    >Read Now</a
+  >
+</div>
+`;
+    var Application_Content =
+      "<div><P class = ' text-center' >Send us an email with the following pdf completed. It will be checked and if everything is ok you will become a Genoa Club Hong Kong member</P><a href = 'Application/GENOA%20CLUB%20HONG%20KONG%20APPLICATION.pdf' class='btn btn-default btn-block btn-link' target = '_blank'>Download</a></div>";
+
+    var About_Content =
+      "The GENOA CLUB HONG KONG was officially founded on October 2014 from a Genovese family, residents in Hong Kong since 2001. The goal of the club is to riunite fans and supporters of Genoa in Hong Kong and China. The objective is to organize events, to see matches together and to promote Genoa in Asia. <br><br>The founders are:<br>Fabio Brassesco<br>Paola Parodi<br>Francesco Brassesco<br>Federico Brassesco<br>Alessandro Maritano<br>Flavia Brassesco<br>Dina Nicolini<br>Maria Luisa Lagomarsino";
+    var Info_Content =
+      " <p  class = 'text-center h4'  >      CLUB ADDRESS: <br>      FLAT 36A. TOWER 1 B - THE LATITUDE <br>      638 PRINCE EDWARD EAST ROAD - SAN PO KONG - KOWLOON <br>      HONG KONG <br>Phone<br> 852-27192774 <br>      WEB <br> www.genoaclubhongkong.com <br>     Email <br><a href='mailto:info@genoaclubhongkong.com' > info@genoaclubhongkong.com</a><br>     <div class = 'row'> <div class = 'col-xs-3'></div>  <div class = 'col-xs-6'>     <img src='Images/Banner.jpg'  class = 'img-responsive'  alt='Genoa Club Hong Kong Banner'>   </div>             <div class = 'col-xs-3'></div> </div>     </p> ";
+
+    var Home_Content = "Click a tab to start browsing <br> Enjoy";
+
+    var Home_Title =
+      "<h1 style='Color:red;' class='text-center'> Welcome to <span style='Color:blue;'> Genoa Club Hong Kong</span></h1></p></h1>";
+
+    $(document).ready(function() {
+      $("#home").click(function() {
+        $("#reading-title").html(Home_Title);
+        $("#reading-content").html(Home_Content);
+      });
+
+      $("#info").click(function() {
+        $("#reading-title").html("Info");
+        $("#reading-content").html(Info_Content);
+      });
+
+      $("#about").click(function() {
+        $("#reading-title").html("About");
+        $("#reading-content").html(About_Content);
+      });
+
+      $("#news").click(function() {
+        $("#reading-title").html("News");
+        $("#reading-content").html(News_Content);
+      });
+
+      $("#application").click(function() {
+        $("#reading-title").html("Application");
+        $("#reading-content").html(Application_Content);
+      });
+    });
+
+    $(window).load(function() {
+      $("#reading-title").html(Home_Title);
+      $("#reading-content").html(Home_Content);
+      console.log("Loaded");
+    });
+  </script>
+</html>
